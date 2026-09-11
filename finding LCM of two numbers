@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main()
+{
+    int a,b;
+    printf("Enter two numbers:");
+    scanf("%d%d",&a,&b);
+    int big=a>b?a:b;
+    int small=a<b?a:b;
+    int step = big;
+    while(big%small!=0){
+        big=big+step;
+    }
+  printf("The lcm is %d ",big);
+}
