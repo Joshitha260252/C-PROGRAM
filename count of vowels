@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+void main(){
+    char collegeName[]="sathyabama institute of science and technology";
+    int count=0;
+
+    for(int i=0;i<strlen(collegeName);i++){
+            if(collegeName[i]=='a'||collegeName[i]=='e'||collegeName[i]=='i'||collegeName[i]=='o'||collegeName[i]=='u'){
+                count++;
+            }
+    }
+    printf("Count of Vowels in Given String :%d",count);
+
+}
