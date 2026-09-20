@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+void main(){
+    char str[50];
+    printf("Enter any Word to check palindrome or not :");
+    scanf("%s",&str);
+    char reverse[strlen(str)];  
+    int j=0;
+    for(int i=strlen(str)-1;i>=0;i--){ 
+        reverse[j++]=str[i];
+    }
+
+    bool f=true;
+   for (int i = 0; i < strlen(str); i++){
+        if(str[i]!=reverse[i]){
+            f=false;
+            break;
+        }
+   }
+   if(f){
+printf("Given String is Palindrome :%s",str);
+}else{
+       printf("Given String is Not  Palindrome :%s",str);
+
+   }
+   
+}
